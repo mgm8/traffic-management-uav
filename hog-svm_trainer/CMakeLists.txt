@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(hog-svm-trainer)
+find_package(OpenCV 3.0.0 REQUIRED)
+add_executable(hog-svm-trainer hog-svm-trainer.cpp)
+target_link_libraries(hog-svm-trainer ${OpenCV_LIBS})
